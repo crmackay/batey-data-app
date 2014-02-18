@@ -6,14 +6,15 @@
 Collect Data either at 'point-of-contact' or afterward on a form
 	
 1. point-of-contact
-	1. offline form
-		- online form for Tammy's HTN Tool (web app?)
-			- enter form data
-				- saves on phone
-				- pop-up number (saved forms)
-				- screen of saves forms (with ability to edit)
-				- ability to hit submit
-			-automatically pop-up a submit when online
+	1. offline form workflow:
+		- a webapp form
+		- provider enters form data and *submits* form
+		- form data is saved to the phone, and provider is sent back to home or form page
+		- at the top of the screen is a *alert* number that displays how many saved forms are saved on the phone, but not submitted
+		- clicking on this alert reveals a screen of saves forms (with ability to edit?)
+			- ability to hit submit 
+			- app checks for connectivity then submits each form, showing progress for each
+		- app reguarly checks for connectivity and automatically pops-up a submit buttom when online
 	1. simple online form
 
 ##HTN Questions
