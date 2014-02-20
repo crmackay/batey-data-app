@@ -1,0 +1,15 @@
+/*
+ * add styles for navigation menu (which has a diplay:none - that is changed with javascript onmouseclick?)
+ */
+
+/*
+ * add styles for badges from boostrap
+ */
+
+.page {
+	display:none;
+}
+
+button {
+	font-size:larger
+}

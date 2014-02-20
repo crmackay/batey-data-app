@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		<!--add icon for homescreen-->
+		<!--add popup for 'add to homescreen'-->
+		<!--add values to remove safari address bar, etc.-->
+	</title>
+
+</head>
+	<form name="encounter_form" onsubmit="saveEncounter()" method="post">
+		<label for="systolic1">
+			Systolic
+		</label>
+		<input id="systolic1" name ="systolic1" type="number" max="400" value="120"/>
+		<label for="diastolic1">
+			Diastolic
+		</label>
+		<input id="diastolic1" type="number" max="400" value="80"/>
+		<input type="submit" value="Save">
+	</form>
+	
+	
+	<script type="text/javascript" src="js/taffydb.js"></script>
+	<script type="text/javascript" src="js/database.js"></script>
+	<script type="text/javascript" src="js/save_encounter.js"></script>
+</html>

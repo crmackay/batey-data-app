@@ -11,8 +11,6 @@ WebApp Ideas:
 - add to home screen pop-up: [here](http://cubiq.org/add-to-home-screen)
 - icons: [here](http://mathiasbynens.be/notes/touch-icons)
 
-- 
-
 - alert "all data will be stored in your bowser un-encrypted until you upload it to a server - we are working on security, but his webapp is a work in progress
 
 - start a clinic: (date, location, GPS coordinates, team, team contact email) - to Table:bp\_clinic
@@ -31,8 +29,11 @@ WebApp Ideas:
 					- uploads records to server: progress bar
 					- checks that records are on server
 					- clears local storage
+					
 - responsive html template:
 	- off-canvas menu: [here](http://css-tricks.com/off-canvas-menu-with-css-target/)
 		- of here: [here](http://www.vinceallen.com/offcanvas/index.html)
 	- 
-			
+
+- python on server side:
+	- http://raspberrywebserver.com/cgiscripting/web-forms-with-python.html

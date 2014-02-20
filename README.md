@@ -15,11 +15,34 @@ A fully-cached and internet-independent webapp capable of displaying various pag
 - python on the server to recieved HTTP POST requests and insert them into a mySQL database
 - Harvest? for database visualization?
 
-#Wireframes
+##Wireframes
 
 First pass:
 ![wireframe](htn_app_wireframe.png)
 
+###Potential Workflow:
+1. user opens app
+	- prompt:
+		- disclaimer:
+			- data is not encrypted
+	- pop-up: save to home screen!
+	- Two choices:
+		- add new encounter
+		- view saved encounters (badge=unsumbitted encounters)
+1. add new encounter
+	- to: team selection screen
+		- select a team
+			- get list of teams from server 
+			- get list of unsaved teams from taffyDB (badge:"!"- onClick:alert("this team had not been saved to the server")
+		- add a new team option
+			- adds a new team record to taffyDB (needs to be synced)
+1. select a team
+	- to: select a clinic day
+		- list of saved clinic days
+		- add a new clinic day
+1. select a clinic day
+	- to: encounter form	
+	
 ##HTN Questions
 
 Taken from the WHO Stepwise Tool
