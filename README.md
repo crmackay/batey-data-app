@@ -1,21 +1,23 @@
 #HBS Grupos Data Collection App
->My attempt at a django app for creating and deploying patient data forms
 
-##Ideas
+##Summary
 
-Collect Data either at 'point-of-contact' or afterward on a form
-	
-1. point-of-contact
-	1. offline form workflow:
-		- a webapp form
-		- provider enters form data and *submits* form
-		- form data is saved to the phone, and provider is sent back to home or form page
-		- at the top of the screen is a *alert* number that displays how many saved forms are saved on the phone, but not submitted
-		- clicking on this alert reveals a screen of saves forms (with ability to edit?)
-			- ability to hit submit 
-			- app checks for connectivity then submits each form, showing progress for each
-		- app reguarly checks for connectivity and automatically pops-up a submit buttom when online
-	1. simple online form
+An offline app built for the collection of *anonymous* patient data from bateys of La Romana, Dominican Republic
+
+##Plan
+
+A fully-cached and internet-independent webapp capable of displaying various pages of forms, saving form data locally (on the device), and uploading collected data to a mysql server once a 3G or WiFi connection is established.
+
+##Technologies to be employed:
+- [TaffyDB](taffydb.com)
+- off canvas menus (css, js)
+- javascript on the client for all of the data manipulation and HTTP POST messages
+- python on the server to recieved HTTP POST requests and insert them into a mySQL database
+- Harvest? for database visualization?
+
+#Wireframes
+
+These will be uploaded soon
 
 ##HTN Questions
 
