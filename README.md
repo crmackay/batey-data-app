@@ -17,7 +17,8 @@ A fully-cached and internet-independent webapp capable of displaying various pag
 
 #Wireframes
 
-These will be uploaded soon
+First pass:
+![wireframe](htn_app_wireframe.png)
 
 ##HTN Questions
 
