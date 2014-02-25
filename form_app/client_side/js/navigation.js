@@ -31,7 +31,6 @@ function nextPage() {
 		get_page=document.getElementById(page_no);
 		get_page.className="visible";
 		get_page.addEventListener('click',nextPage);
-		alert(page_no);
 	}
 };
 
