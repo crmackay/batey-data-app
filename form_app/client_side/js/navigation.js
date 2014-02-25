@@ -13,23 +13,30 @@ function nav(){
 	}
 }
 
+var i=0;
+
+var page_no="page"+i
+	
+
+var get_page=document.getElementById(page_no);
+
+function nextPage() {
+		j=i+1
+		page_next="page"+j
+	if (document.getElementById(page_next))
+	{
+		get_page.className="off-screen-right";
+		i++;
+		page_no="page"+(i);
+		get_page=document.getElementById(page_no);
+		get_page.className="visible";
+		get_page.addEventListener('click',nextPage);
+		alert(page_no);
+	}
+};
 
 
+get_page.addEventListener('click' ,nextPage);
 
-function displayPage(page) {
-	// Create the <style> tag
-	var style = document.createElement("style");
-
-	// Add a media (and/or media query) here if you'd like!
-	// style.setAttribute("media", "screen")
-	// style.setAttribute("media", "@media only screen and (max-width : 1024px)")
-
-	// WebKit hack :(
-	style.appendChild(document.createTextNode(""));
-
-	// Add the <style> element to the page
-	document.head.appendChild(style);
-
-	return style.sheet;
-}
+    
 
