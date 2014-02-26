@@ -46,6 +46,7 @@ button {
     border-style:solid;
     border-color:black;
     background-color:yellow;
+    
 }
 #page2 {
     width:50%;
@@ -54,11 +55,16 @@ button {
     border-style:solid;
     border-color:black;
     background-color:blue;
+    transition: 2s;
 }
 .visible {
     position:absolute;
     top:0;
     left:0;
+    -webkit-transition: all 2s ease-out;  
+       -moz-transition: all 2s ease-out;  
+         -o-transition: all 2s ease-out;
+            transition: all 2s ease-out;
 }
 .off-screen-right {
     position:absolute;
