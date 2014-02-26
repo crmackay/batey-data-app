@@ -15,27 +15,26 @@ function nav(){
 
 var i=0;
 
-var page_no="page"+i
+var page_no="page"+i;
 	
-
-var get_page=document.getElementById(page_no);
+var current_page=document.getElementById(page_no);
 
 function nextPage() {
-		j=i+1
-		page_next="page"+j
-	if (document.getElementById(page_next))
+		j=i+1;
+		next_page="page"+j;
+	if (document.getElementById(next_page))
 	{
-		get_page.className="off-screen-right";
+		current_page.className="off-screen-under";
 		i++;
-		page_no="page"+(i);
-		get_page=document.getElementById(page_no);
-		get_page.className="visible";
-		get_page.addEventListener('click',nextPage);
+		page_no="page"+i;
+		current_page=document.getElementById(page_no);
+		current_page.className="visible";
+		current_page.addEventListener('click',nextPage);
 	}
 };
 
 
-get_page.addEventListener('click' ,nextPage);
+current_page.addEventListener('click' ,nextPage);
 
     
 
