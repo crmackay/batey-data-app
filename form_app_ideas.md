@@ -14,7 +14,7 @@ WebApp Ideas:
 - alert "all data will be stored in your bowser un-encrypted until you upload it to a server - we are working on security, but his webapp is a work in progress
 
 - start a clinic: (date, location, GPS coordinates, team, team contact email) - to Table:bp\_clinic
-		- GPS locations: [here](http://www.w3schools.com/html/html5_geolocation.asp)
+	- GPS locations: [here](http://www.w3schools.com/html/html5_geolocation.asp)
 	- enter a record: bp\_data
 	- save a record: stores data to Table:bp\_data
 	- add a number to 'saved records' notification tag in nav menu([example](http://blog.thinkingstiff.com/2012/01/21/iphone-notification-badge-in-css/)
@@ -37,3 +37,5 @@ WebApp Ideas:
 
 - python on server side:
 	- http://raspberrywebserver.com/cgiscripting/web-forms-with-python.html
+	
+http://tympanus.net/codrops/2013/05/07/a-collection-of-page-transitions/
