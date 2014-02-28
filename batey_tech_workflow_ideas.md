@@ -6,7 +6,7 @@
 3. Port data into the OpenMRS data model
 4. Add HL7 support / switch to using openMRS backend
 
-##wokflow
+##workflow
 - at clinic staff images all new cards- how do you know which ones are new???
 - images and extracted data are uploaded to goodly spreadsheet
 - health promoter has smart phone
