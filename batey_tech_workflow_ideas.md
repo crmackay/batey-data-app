@@ -6,14 +6,13 @@
 3. Port data into the OpenMRS data model
 4. Add HL7 support / switch to using openMRS backend
 
-##worflow
+##wokflow
 - at clinic staff images all new cards- how do you know which ones are new???
 - images and extracted data are uploaded to goodly spreadsheet
 - health promoter has smart phone
 	- regularly administers forms via web app (being proof of concept a for HTN project)
 	- uploads info to google docs via 3G, when a clinic comes, or when they visit hospital
 	- when forms are uploaded batey and promoter specific messages are relayed to health promoter 
-	- 
 
 
 - Client-side?
@@ -48,8 +47,7 @@
 			 		- can we use letters?
 			 		- does the DOH have PINs? 
 			 			- HBS? 
-				 		- Would there be value in using them
-				 		- 
+				 		- Would there be value in using them?
 			 - encounter info
 				 - date
 				 - location
@@ -62,4 +60,3 @@
 			 - provider institution
 		- HL7 message?
 		- concept dictionary
-		- 
