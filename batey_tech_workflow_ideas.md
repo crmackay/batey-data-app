@@ -53,7 +53,6 @@
 				 - location
 				 - provider name
 				 - provider institution
-				 - 
 			 - vitals
 			 - diagnoses
 			 - flags
