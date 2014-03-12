@@ -9,7 +9,7 @@ An offline app built for the collection of *anonymous* patient data from bateys 
 A fully-cached and internet-independent webapp capable of displaying various pages of forms, saving form data locally (on the device), and uploading collected data to a mysql server once a 3G or WiFi connection is established.
 
 ##Technologies to be employed:
-- [TaffyDB](taffydb.com)
+- [TaffyDB](http://www.taffydb.com/)
 - off canvas menus (css, js)
 - javascript on the client for all of the data manipulation and HTTP POST messages
 - python on the server to recieved HTTP POST requests and insert them into a mySQL database
