@@ -13,5 +13,5 @@
       - delete the record
 1. Server-side:
   - [ ] set up Tornado?? or Flask?? to handle HTTP POST requests
-  - [ ] use OAuth for user authentication when uploads are initiatied
+  - [ ] set up user signin/registratio and authentication when uploads are initiatied
   - [ ] set up a static IP
