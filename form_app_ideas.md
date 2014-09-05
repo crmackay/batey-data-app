@@ -38,4 +38,6 @@ WebApp Ideas:
 - python on server side:
 	- http://raspberrywebserver.com/cgiscripting/web-forms-with-python.html
 	
+- CSS transitions:
 http://tympanus.net/codrops/2013/05/07/a-collection-of-page-transitions/
+
