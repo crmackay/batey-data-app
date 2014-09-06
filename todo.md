@@ -4,6 +4,9 @@
   - [ ] make a working javascript/html page
   - [ ] develop a webform
   - [ ] have form data save to taffydb (local storage)
+  - [ ] set up AES encryption on the data via a password
+      - password is only stored in RAM and if undefined it is requested again
+      - password is also used to verify upload (if available) otherwise ots requested again
   - [ ] develop a system by which user is notified of how many records remain in 
   - [ ] develop an upload button that will take each entry and 
     - for every record:
