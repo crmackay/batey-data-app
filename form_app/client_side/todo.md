@@ -12,7 +12,8 @@
 
 
 ## future:
-1. [ ] - add capture GPS coordinate info for a batey
+1. [ ] - add capture GPS coordinate info for a new batey
+    - use `high accuracy` setting
 1. [ ] - add warning for back button
 
 
@@ -20,6 +21,7 @@
 1. [ ] - add manifest/offline support
 1. [ ] - add "add to homescreen" popup (iOS and Android)
 1. [ ] - add icon for iOS and Android
+2. [ ] - add walkthoutgh / tutorial
 
 
 ## adding server-side commnuication
