@@ -8,6 +8,7 @@
 1. [ ] - add JS and JSON that puts prior batey info into the database
 1. [ ] - add handlebars templating to load the entire batey list
 1. [ ] - update all the CSS
+2. [ ] - fix the page transitions to use <a> elements, with event listeners on the '#' in the url
 
 
 
