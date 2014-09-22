@@ -15,6 +15,9 @@
 1. [ ] - add capture GPS coordinate info for a new batey
     - use `high accuracy` setting
 1. [ ] - add warning for back button
+2. [ ] - add HTN form information and saving functionality
+3. [ ] - add CSS badge that alerts the menu button and inside the menu of un-uploaded records
+    - http://kaliko.com/blog/circled-number-with-pure-css/
 
 
 ## way down the road
