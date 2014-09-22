@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+
+	<link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="styles.css" />
+	
+</head> 
+
+<body> 
+
+<div id='container'>
+    <div id='canvas'>    
+        <div class='header'>
+                <button id='menu_button'>&#9776; Menu</button>
+                <button id='back_button'>&larr; BACK</button>
+        </div>
+        <div id='page_one' class='page visible'>
+            
+            <div class='content'>
+                <p>
+                    start collecting responsdes
+                </p>
+                go to <button id='one_to_two'>Choose a batey &rarr;</button>
+            </div>
+        </div>
+        <div id='page_two' class='page' >
+            <div class='body'>
+                <ul class="full-width-list buttons">
+                    <li>
+                        <h3>Copey</h3>
+                        <p>Division: Higuel</p>
+                        <p>View on Map</p>
+                    </li>
+                    <li>
+                        <h3>Las Cejas</h3>
+                        <p>Division: Cuya</p>
+                        <p>View on Map</p>
+                    </li>
+                    <li>
+                        <button id="btn_add_batey">Add A Batey + </button>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    <div id='add_batey' class='page' >
+            <div class='body'>
+                <form id="add_batey_form" action="javascript:registerBatey()">
+                    <input type="text"></input>
+                <input type="submit"></input>
+                </form>
+                
+            </div>
+        
+    </div>
+</div>
+<div id='menu'>
+    <ul>
+        <li>Upload Responses</li>
+        <li>Help</li>
+        <li>Feedback</li>
+    </ul>
+</div>
+
+</body>
+<script src="views.js"></script>
+<script src="forms.js"></script>
+</html>
