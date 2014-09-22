@@ -3,140 +3,70 @@
 <head> 
 	<title>Page Title</title> 
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"/> 
 
-	<link rel="stylesheet" href="jquery.mobile-1.4.3.min.css" />
-	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-	<script src="jquery.mobile-1.4.3.min.js"></script>
-		<script id="panel-init">
-		$(function() {
-			$( "body>[data-role='panel']" ).panel();
-		});
-	</script>
+	<link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="styles.css" />
+	
 </head> 
 
 <body> 
-<!-- Start of PAGE ONE -->
-	<div data-role="page" id="page1">
 
-		
-		<div data-role="header" data-id="nav" data-position="fixed">
-			<h3>Batey Survey App</h3>
-			<a href="#menu" class="ui-btn-right ui-btn ui-icon-bars ui-btn-icon-right ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
-		</div><!-- /header -->
+<div id='container'>
+    <div id='canvas'>    
+        <div class='header'>
+                <button id='menu_button'>&#9776; Menu</button>
+                <button id='back_button'>&larr; BACK</button>
+        </div>
+        <div id='page_one' class='page visible'>
+            
+            <div class='content'>
+                <p>
+                    start collecting responsdes
+                </p>
+                go to <button id='one_to_two'>Choose a batey &rarr;</button>
+            </div>
+        </div>
+        <div id='page_two' class='page' >
+            <div class='body'>
+                <ul class="full-width-list buttons">
+                    <li>
+                        <h3>Copey</h3>
+                        <p>Division: Higuel</p>
+                        <p>View on Map</p>
+                    </li>
+                    <li>
+                        <h3>Las Cejas</h3>
+                        <p>Division: Cuya</p>
+                        <p>View on Map</p>
+                    </li>
+                    <li>
+                        <button id="btn_add_batey">Add A Batey + </button>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    <div id='add_batey' class='page' >
+            <div class='body'>
+                <form id="add_batey_form" action="javascript:registerBatey()">
+                    <input type="text"></input>
+                <input type="submit"></input>
+                </form>
+                
+            </div>
+        
+    </div>
+</div>
+<div id='menu'>
+    <ul>
+        <li>Upload Responses</li>
+        <li>Help</li>
+        <li>Feedback</li>
+    </ul>
+</div>
 
-		<div data-role="content">	
-			<p>Welcome</p>
-			<h1>To Begin:</h1>
-			<p>Select a batey:</p>
-				
-				<!-- if batey list if NOT empty:
-						 make un <ul> with each batey-->
-				
-				<ul>
-				
-				<!-- for each batey in batey list (ordered alphabetically):
-						 make un <ul> with each batey-->
-
-					<li>{{batey name}} de {{batey division}}</li>
-				
-				</ul>
-				
-				<a href="#add_batey" data-rel="dialog" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Add a batey</a></p>
-		
-		</div><!-- /content -->
-			
-		<div data-role="footer">
-			<h4>Page Footer</h4>
-		</div><!-- /footer -->
-	</div><!-- /page -->
-
-
-<!-- Start of PAGE TWO -->
-	<div data-role="page" id="page2">
-
-		<div data-role="header" data-id="nav" data-position="fixed">
-			<h3>Batey Survey App</h3>
-			<a href="#menu" class="ui-btn-right ui-btn ui-icon-bars ui-btn-icon-right ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
-		</div>
-
-		<div data-role="content">	
-			<p>select a batey<p>
-			<p>the batey you are looking for is not on the list, add if here:</p>
-			<a href="#page3" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Next (survey forms)</a>	
-			<p><a href="#page1" data-transition="slide" data-rel="back">back to page 1</a></p>	
-		</div><!-- /content -->
-
-		<div data-role="footer">
-			<h4>Page Footer</h4>
-		</div><!-- /footer -->
-	</div><!-- /page -->
-	
-<!-- Start of PAGE THREE -->
-	<div data-role="page" id="page3">
-
-		<div data-role="header" data-id="nav" data-position="fixed">
-			<h3>Batey Survey App</h3>
-			<a href="#menu" class="ui-btn-right ui-btn ui-icon-bars ui-btn-icon-right ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
-		</div><!-- /header -->
-
-		<div data-role="content">	
-			<p>Select a survey to fill out<p>
-			<a href="#page4" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Fill out Survey</a>
-			<p><a href="#page2" data-transition="slide" data-rel="back">back to bateys</a></p>	
-		</div><!-- /content -->
-
-		<div data-role="footer">
-			<h4>Page Footer</h4>
-		</div><!-- /footer -->
-	</div><!-- /page -->
-
-<!-- Start of PAGE FOUR -->
-	<div data-role="page" id="page4">
-
-		<div data-role="header" data-id="nav" data-position="fixed">
-			<h3>Batey Survey App</h3>
-			<a href="#menu" class="ui-btn-right ui-btn ui-icon-bars ui-btn-icon-right ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
-		</div><!-- /header -->
-
-		<div data-role="content">	
-			<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
-			<p><a href="#page3" data-transition="slide" data-rel="back">back to page 3</a></p>	
-		</div><!-- /content -->
-
-		<div data-role="footer">
-			<h4>Page Footer</h4>
-		</div><!-- /footer -->
-	</div><!-- /page -->
-	
-<div data-role='page' id='add_batey'>
-	<div data-role="header" data-theme="b">
-		<h1>Add a Batey</h1>
-	</div><!-- /header -->
-
-	<div role="main" class="ui-content">
-		<form>
-			<label for="add-batey-name">Batey Name:</label>
-				<input type="text" name="add-batey-name" id="add-batey-name" value="">
-			<label for="add-batey-division">Batey Division:</label>
-				<input type="text" name="add-batey-division" id="add-batey-division" value="">
-		</form>
-		
-		
-		
-		<p><a href="#one" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "one"</a></p>
-	</div>
-
-<div data-role="panel" id="menu" data-position="right" data-display="reveal" data-theme="a">
-
-        <h3>Menu</h3>
-        <ul>
-        	<li>upload records</li>
-        	<li>start a new session (new batey)</li>
-        	<li>Help</li>
-        <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
-        <a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a>
-
-</div><!-- /leftpanel1 -->
 </body>
+<script src="views.js"></script>
+<script src="forms.js"></script>
 </html>
