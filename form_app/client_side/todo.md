@@ -2,9 +2,11 @@
 
 
 ## Immediate:
-- [x] - add batey form
-- [ ] - add pages to a 'history' list for a running back buton
+- [x] add batey form
+- [ ] add pages to a 'history' list for a running back buton
 
+
+## 
 1. [ ] - add localStorageDB to save the batey info
 1. [ ] - add JS and JSON that puts prior batey info into the database
 1. [ ] - add handlebars templating to load the entire batey list
