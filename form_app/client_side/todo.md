@@ -2,7 +2,7 @@
 
 
 ## Immediate:
-1. [ ] - add batey form
+1. [x] - add batey form
 1. [ ] - add pages to a 'history' list for a running back buton
 1. [ ] - add localStorageDB to save the batey info
 1. [ ] - add JS and JSON that puts prior batey info into the database
