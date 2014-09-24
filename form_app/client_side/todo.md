@@ -3,7 +3,7 @@
 
 ## Immediate:
 
-- [x] add batey form
+- [ ] add batey form
 - [ ] add pages to a 'history' list for a running back buton
 
 

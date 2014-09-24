@@ -1,39 +1,39 @@
 
-//menu display
+var current_page = "page_one";
+
+var last_page = "page_one";
 
 var menu_visible = false;
 
+//Menu Display
+
 function displayMenu() {
     
-    if (document.getElementById('canvas').className == 'shifted') {
-        document.getElementById('canvas').className = '';
-        menu_visible = false;
-    } else {
-        document.getElementById('canvas').className = 'shifted';
+    if (menu_visible == false) {
+        document.getElementById('canvas').style.left = '175px';
         menu_visible = true;
+    } else {
+        document.getElementById('canvas').style.left = '0px';
+        menu_visible = false;
     }
 }
 
-document.getElementById("menu_button").addEventListener("click", displayMenu);
+// Whether to Activate the Back Button
 
 function activateBackButton() {
-    console.log('test');
     var button_for_back = document.getElementById("back_button");
-    if (current_page == 'page_one'){
+    if (current_page == 'page_one') {
         button_for_back.disabled = true;
-    } else{
+    } else {
         button_for_back.disabled = false;
-    }       
-};
+    }
+}
 
-// Page display/transition:
-
-var current_page = "page_one";
-var last_page = "page_one";
+// Page display/transition---------------
 
 function forwardPage(page_from, page_to) {
     
-    document.getElementById(page_to).className = 'page visible';
+    document.getElementById(page_to).style.right = '0';
     document.getElementById("back_button").disabled = false;
     
     current_page = page_to;
@@ -43,11 +43,22 @@ function forwardPage(page_from, page_to) {
 }
 
 function backPage(page_from, page_to) {
-    document.getElementById(page_from).className = 'page';
+    document.getElementById(page_from).style.right = '-125%';
     activateBackButton();
-    current_page=lage_page;
-    
+    current_page = lage_page;   
 }
+
+// Back Button Functionality
+
+function goBack() {
+    if (current_page != 'page_one') {
+        backPage(current_page, last_page);
+    }
+}
+
+activateBackButton();
+
+// Add Event Listeners
 
 document.getElementById("one_to_two").addEventListener("click",
     function(){
@@ -55,22 +66,12 @@ document.getElementById("one_to_two").addEventListener("click",
     }
     ,false);
 
-// BACK Button
-
-function goBack() {
-    if (current_page != 'page_one'){
-        backPage(current_page, last_page);
-    }
-};
+document.getElementById("menu_button").addEventListener("click", displayMenu);
 
 document.getElementById("back_button").addEventListener("click", goBack);
 
-activateBackButton();
-
-// add a batey button
-
-document.getElementById("btn_add_batey").addEventListener("click",function(){
+document.getElementById("btn_add_batey").addEventListener("click", 
+    function(){
         forwardPage("page_two", "add_batey");
-    }
-    ,false);
+    }, false);
 

@@ -1,5 +1,13 @@
+html{ 
+    height: 100%;
+    width:100%;
+}
 body{
     margin:0;
+    padding:0;
+    border-width: 0;
+    height: 100%;
+    width:100%;
 }
 
 #menu{
@@ -12,8 +20,11 @@ body{
 }
 
 #container{
+    margin:0;
+    padding:0;
+    border-width: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #e6e1e1;
     position:relative;
     overflow:hidden;
@@ -21,14 +32,17 @@ body{
 }
 
 #canvas{
-    height:100vh;
-    width:100vw;
+    margin:0;
+    padding:0;
+    border-width: 0;
+    height:100%;
+    width:100%;
     position:absolute;
-    left: 0px;
-    background-color: #f7cdcd;
+    left: 0px; /*this value is changed by js in order to reveal the underlying menu*/
+    background-color: #e50000;
     z-index: 1;
-    box-shadow: -20px 0px 21px -10px rgba(50, 50, 50, 0.75);
-    transition: all 0.5s ease-out;
+    box-shadow: -6px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    transition: all 0.4s ease-out;
     overflow:hidden;
 }
 
@@ -37,34 +51,40 @@ body{
 }
 
 .header{
-    height:8%;
-    width: 96%;
-    padding:2%;
+    height: 10%;
+    width: 100%;
+    padding:0;
+    background: #00ff62;
+    box-shadow: 0px 1px 18px -1px rgba(85, 85, 85, 0.75);
+    position: absolute;
+    z-index: 10;
 }
 
 .page {
-    width:96%;
-    height: 88%;
+    width:100%;
+    height: 90%;
     position:absolute;
     top:10%;
-    right:-100%;
-    transition: all 0.6s ease-out;
+    right:-110%; /*puts pages off-canvas to the right of 
+                the screen, javascript is then used to 
+                change this value to '0'*/
+    transition: all 0.4s ease-out;
     background: #98c9fa;
-    padding:2%;
-    
+    padding:0;
+    z-index: 3;
+    box-shadow: -20px 0px 21px -10px rgba(50, 50, 50, 0.75);
 }
+
 .page.visible{
     right:0;
-    box-shadow: -20px 0px 21px -10px rgba(50, 50, 50, 0.75);
-    
 }
 
 button{
-    height:80%;
+    height:70%;
     border: 1px;
     border-style: solid;
     border-color: black;
     border-radius:8px;
-    
+    margin:4px;  
 }
 
