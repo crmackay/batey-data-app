@@ -9,11 +9,13 @@
 
 ## 
 1. [ ] - add localStorageDB to save the batey info
+    [ ] define data model...with a version number etc...how how to manage it in future versions
 1. [ ] - add JS and JSON that puts prior batey info into the database
 1. [ ] - add handlebars templating to load the entire batey list
 1. [ ] - update all the CSS
 2. [ ] - fix the page transitions to use <a> elements, with event listeners on the '#' in the url
     - https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers.onhashchange
+3. [ ] - add 'app-state' storage into localStorage so that on crashes/closes app can restart from where left off
 3. [ ] - add iOS standalone app elements (icon, startup page, no UI feature, etc.)
     - see webpage: http://blog.teamtreehouse.com/optimizing-mobile-web-apps-ios
 4. [ ] - add andoid stanalone app elements
@@ -35,7 +37,7 @@
 1. [ ] - add "add to homescreen" popup (iOS and Android)
 1. [ ] - add icon for iOS and Android
 2. [ ] - add walkthoutgh / tutorial
-3. [ ] - add 'app-state' storage into localStorage so that on crashes/closes app can restart from where left off
+
 
 
 ## adding server-side commnuication
