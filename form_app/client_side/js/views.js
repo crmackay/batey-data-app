@@ -44,8 +44,8 @@ function forwardPage(page_from, page_to) {
 
 function backPage(page_from, page_to) {
     document.getElementById(page_from).style.right = '-125%';
+    current_page = last_page;   
     activateBackButton();
-    current_page = lage_page;   
 }
 
 // Back Button Functionality
@@ -58,15 +58,49 @@ function goBack() {
 
 activateBackButton();
 
+var start_target = null;
+var end_target = null;
+
+function detectTap(start_target,end_target) {
+    console.log(start_target);
+    console.log(end_target);
+    
+    if (start_target === end_target){
+        displayMenu();
+        console.log('tap event fired');
+    }
+    var start_target = null;
+    var end_target = null;
+}
+
 // Add Event Listeners
 
 document.getElementById("one_to_two").addEventListener("click",
-    function(){
+    function(e){
         forwardPage("page_one", "page_two");
     }
     ,false);
 
 document.getElementById("menu_button").addEventListener("click", displayMenu);
+document.getElementById("menu_button").addEventListener("touchstart", 
+    function(e) {
+        e.preventDefault();
+    });
+
+document.getElementById("menu_button").addEventListener("touchend", 
+    function(e) {
+        e.preventDefault();
+        var last_touch = e.changedTouches[0];
+        end_x = last_touch.clientX;
+        end_y = last_touch.clientY;
+        var start_target = last_touch.target;
+        var end_target = document.elementFromPoint(end_x,end_y);
+        detectTap(start_target,end_target);
+    });
+
+
+
+
 
 document.getElementById("back_button").addEventListener("click", goBack);
 
@@ -74,4 +108,6 @@ document.getElementById("btn_add_batey").addEventListener("click",
     function(){
         forwardPage("page_two", "add_batey");
     }, false);
+
+document.getElementById('page_one').style.right='0';
 
