@@ -3,9 +3,59 @@
 
 ## Immediate:
 
-- [ ] add batey form
+- [ ] fix page layout so its more semantic
+    - menubar
+    - pages - which will be scollable
+    - modals---which are also scrollable
+- [ ] draft out data models (different client-side vs server-side?)
+    - batey info
+        - id
+        - name
+        - division
+        - GPS coordinates
+        - GPS inclusive polygon
+    - form info
+        - formid
+        - versionid
+        - name
+        - version
+    - questions
+        - formid
+        - formverid
+        - type
+        - label
+        - hint
+        - required (boolean)
+    - data
+        - dataid
+        - formid
+        - formverid
+        - questionid
+        - response
+    - question info
+    - 
+- [ ] add batey form (as a modal)
 - [ ] add pages to a 'history' list for a running back buton
-
+- [ ] fix transitions so that it is simpler:
+    - class='visible'
+        ```css
+        .hidden {
+            visibility:hidden;
+        }
+        .hidden.page {
+            left:125%;
+            opacity:1;
+        }
+        .hidden.modal {
+            left:0;
+            opacity:0;
+        }
+        .visible{
+            visibility: visible;
+            opacity:1;
+            left:0;
+        }
+        ```
 
 ## 
 1. [ ] - add localStorageDB to save the batey info
@@ -38,10 +88,15 @@
 1. [ ] - add icon for iOS and Android
 2. [ ] - add walkthoutgh / tutorial
 
-
-
 ## adding server-side commnuication
 1. [ ] - add upload functionality
     - via an `XMLHttpRequest` object with JSON
 
 1. [ ] - add check registered user functionality (on download of app, and on upload of data) 
+
+
+##way way way down the roa
+1. [ ] - make a admin/backend platform:
+    1. [ ] - browse the data
+    1. [ ] - make/edit forms
+    2. [ ] - deploy forms
