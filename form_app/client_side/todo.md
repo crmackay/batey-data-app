@@ -32,7 +32,12 @@
         - formverid
         - questionid
         - response
-    - question info
+    - sessionInfo
+        - usercode
+        - page_history
+        - current_page
+        - selected batey
+        - currentPageInfo(fill form info, slected bateys, etc...)
     - 
 - [ ] add batey form (as a modal)
 - [ ] add pages to a 'history' list for a running back buton
