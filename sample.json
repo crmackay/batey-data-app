@@ -1,0 +1,62 @@
+// app JSON data structure
+
+    - batey info
+        - id
+        - name
+        - division
+        - GPS coordinates
+        - GPS inclusive polygon
+    - form info
+        - formid
+        - versionid
+        - name
+        - version
+    - questions
+        - formid
+        - formverid
+        - type
+        - label
+        - hint
+        - required (boolean)
+    - data
+        - dataid
+        - formid
+        - formverid
+        - questionid
+        - response
+    - question info
+    
+{"batey_info": [
+	{
+		"id":0, 
+		"name": "Copey", 
+		"division": "Higueral", 
+		"gps_coordinates":[18.589149, -69.037397], 
+		"gps_polygon": [
+			[100.0, 0.0], [101.0, 0.0], [101.0, 1.0], [100.0, 1.0], [100.0, 0.0]
+		]
+	},
+	{
+		"id":1, 
+		"name": "Lechuga", 
+		"division": "Lechuga", 
+		"gps_coordinates":[35.45, 68.95], 
+		"gps_polygon": null
+	}
+]}
+
+{"questions": [
+	{
+		"id":0,
+		"form_id":0,
+		"form_ver_id":0,
+		"type": "integer",
+		"name": "bp_1",
+		"label": "Blood Pressure #1",
+		"hint": "the measurement from the first blood pressure reading"
+		"required": true,
+	},
+	{
+		"id":
+	}
+]}
