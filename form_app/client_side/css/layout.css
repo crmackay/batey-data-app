@@ -1,0 +1,176 @@
+html{ 
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin:0;
+    padding:0;
+    border-width: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#menu{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:0;
+}
+
+#container{
+    margin:0;
+    padding:0;
+    border-width: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e6e1e1;
+    position:relative;
+    overflow:hidden;
+    
+}
+
+#canvas{
+    margin:0;
+    padding:0;
+    border-width: 0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    left: 0px; /*this value is changed by js in order 
+                to reveal the underlying menu*/
+    background-color: #e50000;
+    z-index: 1;
+    box-shadow: -6px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    transition: all 0.4s ease-out;
+    overflow:hidden;
+}
+
+.menu-bar{
+    height: 15mm;
+    width: 100%;
+    padding:0;
+    background: #3a3791;
+    box-shadow: 0px 1px 18px -1px rgba(85, 85, 85, 0.75);
+    position: absolute;
+    z-index: 10;
+}
+
+.page {
+    width:100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    right:-110%; /*puts pages off-canvas to the right of 
+                the screen, javascript is then used to 
+                change this value to '0'*/
+    transition: all 0.4s ease-out;
+    background: #98c9fa;
+    padding:0;
+    z-index: 3;
+    box-shadow: -20px 0px 21px -10px rgba(50, 50, 50, 0.75);
+}
+
+.page>.content{
+    position:absolute;
+    top:18mm;
+    left:0;
+    width:100%;
+}
+
+button{
+    height:90%;
+    border-style: solid;
+    border-color: black;
+    border-radius:20px;
+    border-width: 4px;
+    color:white;
+    font-size: 1.3em;
+    margin:1%;
+    background-color:#3a3791;
+}
+
+.menu-bar button{
+    font-size: 10mm;
+    border-width:0;
+    border-color:none;
+    border-radius:0;
+    margin-top:0;
+    margin-bottom :0;
+    padding-top:0;
+    padding-bottom:0;
+    margin-left:0;
+    width:15mm;
+    text-align: left;
+    
+}
+.modal{
+    position:absolute;
+    left:0;
+    top:-125%;
+    opacity:0;
+    z-index: 11;
+    transition: all 0.4s linear;
+    background: #b8c5e0;
+    height:100%;
+    width:100%;
+} 
+
+.visible{  
+    opacity:1; 
+    left:0;
+    top:0;
+}
+
+.modal .header{
+    height: 15%;
+}
+
+.modal .container{
+    height: 85%;
+    
+}
+
+form label,input{
+    width:100% 
+}
+
+input:disabled{
+    background:#e5e5e5;
+}
+
+input{
+    border-radius:6px;
+}
+
+ul.full-width-list-buttons {
+    list-style-type: none;
+    padding:0;    
+}
+
+ul.full-width-list-buttons li:first-of-type{
+    border-top-width:1px;
+    border-top-style:solid;
+    border-top-color:black;
+}
+
+ul.full-width-list-buttons li{
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:black;
+    
+    padding-left:10px;
+}
+
+ul.full-width-list-buttons li h3{
+    font-size:1em;
+    margin:0;
+}
+
+ul.full-width-list-buttons li p{
+    display:inline;
+}
+
+
+
