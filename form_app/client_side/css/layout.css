@@ -1,13 +1,13 @@
 html{ 
     height: 100%;
-    width:100%;
+    width: 100%;
 }
 body{
     margin:0;
     padding:0;
     border-width: 0;
     height: 100%;
-    width:100%;
+    width: 100%;
 }
 
 #menu{
@@ -38,7 +38,8 @@ body{
     height:100%;
     width:100%;
     position:absolute;
-    left: 0px; /*this value is changed by js in order to reveal the underlying menu*/
+    left: 0px; /*this value is changed by js in order 
+                to reveal the underlying menu*/
     background-color: #e50000;
     z-index: 1;
     box-shadow: -6px 0px 20px 0px rgba(50, 50, 50, 0.75);
@@ -46,7 +47,7 @@ body{
     overflow:hidden;
 }
 
-.header{
+.menu-bar{
     height: 15mm;
     width: 100%;
     padding:0;
@@ -74,8 +75,8 @@ body{
 .page>.content{
     position:absolute;
     top:18mm;
-    left:4%;
-    width:92%;
+    left:0;
+    width:100%;
 }
 
 button{
@@ -90,7 +91,7 @@ button{
     background-color:#3a3791;
 }
 
-.header>button{
+.menu-bar button{
     font-size: 10mm;
     border-width:0;
     border-color:none;
@@ -104,4 +105,72 @@ button{
     text-align: left;
     
 }
+.modal{
+    position:absolute;
+    left:0;
+    top:-125%;
+    opacity:0;
+    z-index: 11;
+    transition: all 0.4s linear;
+    background: #b8c5e0;
+    height:100%;
+    width:100%;
+} 
+
+.visible{  
+    opacity:1; 
+    left:0;
+    top:0;
+}
+
+.modal .header{
+    height: 15%;
+}
+
+.modal .container{
+    height: 85%;
+    
+}
+
+form label,input{
+    width:100% 
+}
+
+input:disabled{
+    background:#e5e5e5;
+}
+
+input{
+    border-radius:6px;
+}
+
+ul.full-width-list-buttons {
+    list-style-type: none;
+    padding:0;    
+}
+
+ul.full-width-list-buttons li:first-of-type{
+    border-top-width:1px;
+    border-top-style:solid;
+    border-top-color:black;
+}
+
+ul.full-width-list-buttons li{
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:black;
+    
+    padding-left:10px;
+}
+
+ul.full-width-list-buttons li h3{
+    font-size:1em;
+    margin:0;
+}
+
+ul.full-width-list-buttons li p{
+    display:inline;
+}
+
+
 

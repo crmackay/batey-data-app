@@ -22,14 +22,15 @@
 	<link rel="stylesheet" href="css/layout.css"/>
     
     <link rel="stylesheet" href="css/styles.css"/>
-	
+
+
 </head> 
 
 <body> 
 
 <div id='container'>
     <div id='canvas'>    
-        <div class='header'>
+        <div class='menu-bar'>
                 <button id='menu_button'>&#9776;</button>
                 <button id='back_button'>&larr;</button>
         </div>
@@ -44,7 +45,7 @@
         </div>
         <div id='page_two' class='page' >
             <div class='content'>
-                <ul class="full-width-list buttons">
+                <ul class="full-width-list-buttons" id="batey-list">
                     <li>
                         <h3>Copey</h3>
                         <p>Division: Higuel</p>
@@ -55,23 +56,21 @@
                         <p>Division: Cuya</p>
                         <p>View on Map</p>
                     </li>
-                    <li>
-                        <button id="btn_add_batey">Add A Batey + </button>
-                    </li>
                 </ul>
-                
+                    <button id="button-add-batey">Add A Batey + </button>
+
             </div>
         </div>
-    <div id='add_batey' class='page' >
+        <div id='add_batey' class='page' >
             <div class='content'>
-                <form id="add_batey_form" action="javascript:registerBatey()">
+                <form id="add_batey_form">
                     <input type="text"></input>
                 <input type="submit"></input>
                 </form>
                 
             </div>
         
-    </div>
+        </div>
 </div>
 <div id='menu'>
     <ul>
@@ -80,8 +79,29 @@
         <li>Feedback</li>
     </ul>
 </div>
+<div id='add-batey-modal' class='modal'>
+    <div class='header'>
+        <button id='close-add-batey' class='close-modal' >Close</button>
+    </div>
+    <div class='container'>
+        <form id='form-add-batey'>
+            <label id='batey-name'>Batey Name</label>
+                <input type='text' id='batey-name' required></input>
+            <label id='batey-division'>Division/Region</label>
+                <input type='text' id='batey-division' form>
+            <label name='gps-lat' >Latitude</label></input>
+                <input type='number' name='gps-lat' disabled id='gps-lat-input' value=''></input>
+            <label name='gps-lon'>Longitude</label></input>
+                <input type='number' name='gps-lon' id='gps-lon-input' disabled value=''></input>
+            <button type='button' id="get-position" onclick="getPosition">Get My Location</button>
+            <button type='button' id='batey-form-save'>Save</button>
+        </form>
+        
+    </div>
+
+</div>
 
 </body>
-<script src="js/views.js"></script>
-<script src="js/forms.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/views.js"></script>
 </html>

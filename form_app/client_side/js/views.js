@@ -104,10 +104,17 @@ document.getElementById("menu_button").addEventListener("touchend",
 
 document.getElementById("back_button").addEventListener("click", goBack);
 
-document.getElementById("btn_add_batey").addEventListener("click", 
-    function(){
-        forwardPage("page_two", "add_batey");
+document.getElementById("button-add-batey").addEventListener("click", 
+    function(e){
+        document.getElementById('add-batey-modal').classList.toggle('visible');
     }, false);
 
 document.getElementById('page_one').style.right='0';
+
+document.getElementById('get-position').addEventListener('click', getPosition);
+
+document.getElementById('close-add-batey').addEventListener('click', 
+    function(e){
+        document.getElementById('add-batey-modal').classList.toggle('visible');
+});
 
