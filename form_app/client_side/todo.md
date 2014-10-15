@@ -3,6 +3,7 @@
 
 ## Immediate:
 
+- [ ] set up webhook to auto update dev.chrismackay.org/batey-data-app/demo
 - [ ] fix page layout so its more semantic
     - menubar
     - pages - which will be scollable
