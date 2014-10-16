@@ -3,12 +3,8 @@
 
 ## Immediate:
 
-<<<<<<< HEAD
-- [ ] fix page html layout so its more semantic
-=======
 - [ ] set up webhook to auto update dev.chrismackay.org/batey-data-app/demo
 - [ ] fix page layout so its more semantic
->>>>>>> FETCH_HEAD
     - menubar
     - pages - which will be scollable
     - modals---which are also scrollable
@@ -39,8 +35,8 @@
         - response
     - sessionInfo
         - usercode
-        - page_history
-        - current_page
+        - page\_history
+        - current\_page
         - selected batey
         - currentPageInfo(fill form info, slected bateys, etc...)
     - 
