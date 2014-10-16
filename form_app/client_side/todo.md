@@ -3,7 +3,12 @@
 
 ## Immediate:
 
+<<<<<<< HEAD
+- [ ] fix page html layout so its more semantic
+=======
+- [ ] set up webhook to auto update dev.chrismackay.org/batey-data-app/demo
 - [ ] fix page layout so its more semantic
+>>>>>>> FETCH_HEAD
     - menubar
     - pages - which will be scollable
     - modals---which are also scrollable
@@ -41,46 +46,26 @@
     - 
 - [ ] add batey form (as a modal)
 - [ ] add pages to a 'history' list for a running back buton
+    - [ ] make a array/list of visible pages
 - [ ] fix transitions so that it is simpler:
-    - class='visible'
-        ```css
-        .hidden {
-            visibility:hidden;
-        }
-        .hidden.page {
-            left:125%;
-            opacity:1;
-        }
-        .hidden.modal {
-            left:0;
-            opacity:0;
-        }
-        .visible{
-            visibility: visible;
-            opacity:1;
-            left:0;
-        }
-        ```
 
 ## 
 1. [ ] - add localStorageDB to save the batey info
     [ ] define data model...with a version number etc...how how to manage it in future versions
-1. [ ] - add JS and JSON that puts prior batey info into the database
-1. [ ] - add handlebars templating to load the entire batey list
+1. [ ] - add JS and JSON that puts prior batey info into the database, fields: status (from server, uploaded, ( )
 1. [ ] - update all the CSS
-2. [ ] - fix the page transitions to use <a> elements, with event listeners on the '#' in the url
-    - https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers.onhashchange
 3. [ ] - add 'app-state' storage into localStorage so that on crashes/closes app can restart from where left off
+    - page, current batey, current form, page history.
 3. [ ] - add iOS standalone app elements (icon, startup page, no UI feature, etc.)
     - see webpage: http://blog.teamtreehouse.com/optimizing-mobile-web-apps-ios
-4. [ ] - add andoid stanalone app elements
+4. [ ] - add andoid standalone app elements
     - see webpage: http://www.mobilexweb.com/blog/home-screen-web-apps-android-chrome-31
 
 
 
 ## future:
 1. [ ] - add capture GPS coordinate info for a new batey
-    - use `enableHighAccuracy` setting: http://code.tutsplus.com/tutorials/an-introduction-to-the-geolocation-api--cms-20071
+    - fix `enableHighAccuracy` on iPhone setting: http://code.tutsplus.com/tutorials/an-introduction-to-the-geolocation-api--cms-20071
 1. [ ] - add warning for back button
 2. [ ] - add HTN form information and saving functionality
 3. [ ] - add CSS badge that alerts the menu button and inside the menu of un-uploaded records
@@ -100,7 +85,7 @@
 1. [ ] - add check registered user functionality (on download of app, and on upload of data) 
 
 
-##way way way down the roa
+##way way way down the road (WITH Harvest)
 1. [ ] - make a admin/backend platform:
     1. [ ] - browse the data
     1. [ ] - make/edit forms

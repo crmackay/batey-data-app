@@ -10,7 +10,7 @@ var menu_visible = false;
 function displayMenu() {
     
     if (menu_visible == false) {
-        document.getElementById('canvas').style.left = '175px';
+        document.getElementById('canvas').style.left = '80%';
         menu_visible = true;
     } else {
         document.getElementById('canvas').style.left = '0px';
@@ -61,13 +61,14 @@ activateBackButton();
 var start_target = null;
 var end_target = null;
 
-function detectTap(start_target,end_target) {
+function detectTap(start_target,end_target, e) {
     console.log(start_target);
     console.log(end_target);
     
     if (start_target === end_target){
         displayMenu();
         console.log('tap event fired');
+        e.preventDefault();
     }
     var start_target = null;
     var end_target = null;
@@ -89,13 +90,12 @@ document.getElementById("menu_button").addEventListener("touchstart",
 
 document.getElementById("menu_button").addEventListener("touchend", 
     function(e) {
-        e.preventDefault();
         var last_touch = e.changedTouches[0];
         end_x = last_touch.clientX;
         end_y = last_touch.clientY;
         var start_target = last_touch.target;
         var end_target = document.elementFromPoint(end_x,end_y);
-        detectTap(start_target,end_target);
+        detectTap(start_target,end_target, e);
     });
 
 
