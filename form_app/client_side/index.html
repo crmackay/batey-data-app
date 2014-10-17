@@ -1,65 +1,120 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>
-		
-	</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+<!DOCTYPE html> 
+<html> 
+<head> 
+    
+    <!-- Run in full-screen mode. -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+ 
+    <!-- Make the status bar black with white text. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+ 
+    <!-- Customize home screen title. -->
+    <meta name="apple-mobile-web-app-title" content="Batey Formas"/>
+ 
+    <!-- Disable phone number detection. -->
+    <meta name="format-detection" content="telephone=no"/>
+ 
+    <!-- Set viewport. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+                                                               
+    <title>Batey Formas</title> 
+	                   
+	<link rel="stylesheet" href="css/layout.css"/>
+    
+    <link rel="stylesheet" href="css/styles.css"/>
 
-</head>
 
-<body>
-<!--
-	<ul id="main-nav" style="display:none">
-  		<li><a href="#">Submit Records</a></li> <!---add badge
-  		<li><a href="#">view records</a></li>
-  		<li><a href="#">Piggy</a></li>
-  		<li><a href="#">Went</a></li>
-  		<li><a href="#">To</a></li>
-  		<li><a href="#">Market</a></li>
-	</ul>
-	<!--- this is the main page 
-	<div class="page-wrap">
-	<!--- 
- 		<header class="main-header">
-    		<button class="open-menu" onClick="nav()">
-    			&#9776;
-			</button>
-			<h1>PanelMenu</h1>
-		</header>
-		<!--- 
-		<div class="content">
-			<!--- 
-			<form name="">
-				
-			</form>
-  		</div>	
-	</div>-->
-	
-	<div class="screen">
-		<div class="top-nav">
-			<div class="back-button">
-				<button>Back</button>
-			</div>
-			<div class="menu-button">
-				<button>&#9776;</button>
-			</div>
-		</div>
-		<div class="container">
-			<div id="page0" class="visible">things to do:
-        	    <ul>
-        	        <li>add top navigation (eg back buttons)</li>
-        	        <li>add bottom nagigation</li>
-        	        <li>add off canvas menu</li>
-        	    </ul>
-        	</div>
-        	<div id="page1" class="off-screen-right">hello world 1</div>
-        	<div id="page2" class="off-screen-right">hello world 2</div>
-		</div>
-		<div class="bottom-nav">
-			<button></button>
-		</div>
-	</div>
+</head> 
+
+<body> 
+
+<div id='container'>
+    <div id='canvas'>    
+        <div class='menu-bar'>
+            <div class='menu-bar-left'>
+                <button id='menu_button'>&#9776;</button>
+            </div>
+            <div class='menu-bar-center'>
+                Menu Title
+            </div>
+            <div class='menu-bar-right'>
+                <button id='back_button'>&larr;</button>
+            </div>
+                
+                
+        </div>
+        <div id='page_one' class='page'>
+            
+            <div class='content'>
+                <p>
+                    start collecting responsdes
+                </p>
+                go to <button id='one_to_two'>Choose a batey &rarr;</button>
+            </div>
+        </div>
+        <div id='page_two' class='page' >
+            <div class='content'>
+                <ul class="full-width-list-buttons" id="batey-list">
+                    <li>
+                        <h3>Copey</h3>
+                        <p>Division: Higuel</p>
+                        <p>View on Map</p>
+                    </li>
+                    <li>
+                        <h3>Las Cejas</h3>
+                        <p>Division: Cuya</p>
+                        <p>View on Map</p>
+                    </li>
+                </ul>
+                    <button id="button-add-batey">Add A Batey + </button>
+
+            </div>
+        </div>
+        <div id='add_batey' class='page' >
+            <div class='content'>
+                <form id="add_batey_form">
+                    <input type="text"></input>
+                <input type="submit"></input>
+                </form>
+                
+            </div>
+        
+        </div>
+    </div>
+<div id='menu'>
+    <ul class="full-width-list-buttons">
+        <li>Upload Responses &uarr;</li>
+        <li>Help ? </li>
+        <li>Feedback</li>
+        <li>Clear Saved Data</li>
+    </ul>
+</div>
+<div id='add-batey-modal' class='modal'>
+    <div class='header'>
+        <button id='close-add-batey' class='close-modal' >Close</button>
+    </div>
+    <div class='container'>
+        <form id='form-add-batey'>
+            <label id='batey-name'>Batey Name</label>
+                <input type='text' id='batey-name' required></input>
+            <label id='batey-division'>Division/Region</label>
+                <input type='text' id='batey-division' form>
+            <label name='gps-lat' >Latitude</label></input>
+                <input type='number' name='gps-lat' disabled id='gps-lat-input' value=''></input>
+            <label name='gps-lon'>Longitude</label></input>
+                <input type='number' name='gps-lon' id='gps-lon-input' disabled value=''></input>
+            <button type='button' id="get-position" onclick="getPosition">Get My Location</button>
+            <button type='button' id='batey-form-save'>Save</button>
+        </form>
+        
+    </div>
+
+</div>
+
 </body>
-	<script type="text/javascript" src="js/navigation.js"></script>
+    <script src="js/data.js"></script>
+    <scrip src="js/model.js"></scrip>
+    <script src="js/data.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/views.js"></script>
 </html>
