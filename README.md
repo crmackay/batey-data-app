@@ -2,18 +2,18 @@
 
 ##Summary
 
-An offline app built for the collection of *anonymous* patient data from bateys of La Romana, Dominican Republic
+An offline app built for the collection of healthcare data from bateys of La Romana, Dominican Republic
 
 ##Plan
 
-A fully-cached and internet-independent webapp capable of displaying various pages of forms, saving form data locally (on the device), and uploading collected data to a mysql server once a 3G or WiFi connection is established.
+A fully-cached and internet-independent webapp capable of displaying various pages of forms, saving form data locally (on the device), and uploading collected data to a server once a 3G or WiFi connection is established.
 
 ##Technologies to be employed:
-- [TaffyDB](http://www.taffydb.com/)
+- [localstoragedb.js](http://nadh.in/code/localstoragedb/)
 - off canvas menus (css, js)
-- javascript on the client for all of the data manipulation and HTTP POST messages
+- javascript on the client for all of the data manipulation and formation of HTTP POST messages
 - python on the server to recieved HTTP POST requests and insert them into a mySQL database
-- Harvest? for database visualization?
+- Harvest? for database visualization later on?
 
 ##Wireframes
 
