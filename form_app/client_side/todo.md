@@ -6,8 +6,13 @@
 - [ ] set up webhook to auto update dev.chrismackay.org/batey-data-app/demo
 - [ ] fix page layout so its more semantic
     - menubar
-    - pages - which will be scollable
+    - pages - which will be scollable...
+    	- forms- wtform objects in Flask that come to client as html
+    		- a view for each form
+    	- data - stored as JSON objects
+    		- data put into pages by views
     - modals---which are also scrollable
+- [ ] set up views with handlebars.js
 - [ ] draft out data models (different client-side vs server-side?)
     - batey info
         - id

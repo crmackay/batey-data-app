@@ -1,19 +1,36 @@
-#HBS Grupos Data Collection App
+# HBS Grupos Data Collection App
 
-##Summary
+## Summary
 
-An offline app built for the collection of *anonymous* patient data from bateys of La Romana, Dominican Republic
+An offline, fully-cached, platform agnostic, html5-based web app built for the collection of patient data local and remote areas (namely the bateys of La Romana, Dominican Republic).
 
-##Plan
+## How will if work:
 
-A fully-cached and internet-independent webapp capable of displaying various pages of forms, saving form data locally (on the device), and uploading collected data to a mysql server once a 3G or WiFi connection is established.
+This will be a web app, built using javascipt, and saved locally via a application cache [manifest](https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache).
+
+It will work right-away on iOS and Andoud devices (phones and tablets), and should be able to work on windows phone, firefoxOS, and other smart phone OSes in the future.
+
+Forms, pages, and data will all be stored on the device via a device-specific form of local storage (either localstorage, indexeddb, websql, etc.).
+
+Data will be uploaded to a server and removed from the device whenever internet access is established.
+
+Only registered users will be able to download and save the app onto their phone, and upload data, and all data on the device will be fully encrypted, and only accessible via a user password. 
+
+### Security Details:
+
+When a user logs into the website (on the server) their password will be hashed (hash #1) and checked against the stored hash (per usual).
+
+If this checks out a secure, but different password hash (hash #2) will created and saved on the device. This second hash will be used to check the password regularly on the device (maybe every hour?). The users password will simultaneously be hashed a third time (hash #3) which will be used as the passcode for encryption and deleted every hour. 
 
 ##Technologies to be employed:
-- [TaffyDB](taffydb.com)
-- off canvas menus (css, js)
+
 - javascript on the client for all of the data manipulation and HTTP POST messages
-- python on the server to recieved HTTP POST requests and insert them into a mySQL database
-- Harvest? for database visualization?
+	- I'm testing frameworks, right now, but given the requirement of having a very small size, I think vanilla JS might be the best option
+
+- python via Flask (WSGI) on the server to recieve HTTP POST requests and insert them into a mySQL database
+	- flask will allow greater flexibility and portability for the app
+	
+- mongoDB for data persistence on the server
 
 ##Wireframes
 
