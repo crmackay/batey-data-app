@@ -23,12 +23,7 @@ When a user logs into the website (on the server) their password will be hashed 
 If this checks out a secure, but different password hash (hash #2) will created and saved on the device. This second hash will be used to check the password regularly on the device (maybe every hour?). The users password will simultaneously be hashed a third time (hash #3) which will be used as the passcode for encryption and deleted every hour. 
 
 ##Technologies to be employed:
-<<<<<<< HEAD
-- [TaffyDB](http://www.taffydb.com/)
-- off canvas menus (css, js)
-=======
 
->>>>>>> roll-my-own-js
 - javascript on the client for all of the data manipulation and HTTP POST messages
 	- I'm testing frameworks, right now, but given the requirement of having a very small size, I think vanilla JS might be the best option
 
@@ -37,12 +32,12 @@ If this checks out a secure, but different password hash (hash #2) will created 
 	
 - mongoDB for data persistence on the server
 
-##Wireframes
+## Wireframes
 
 First pass:
 ![wireframe](htn_app_wireframe.png)
 
-###Potential Workflow:
+### Potential Workflow:
 1. user opens app
 	- prompt:
 		- disclaimer:
@@ -65,7 +60,7 @@ First pass:
 1. select a clinic day
 	- to: encounter form	
 	
-##HTN Questions
+## HTN Questions
 
 Taken from the WHO Stepwise Tool
 
