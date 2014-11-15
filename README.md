@@ -2,13 +2,13 @@
 
 ## Summary
 
-An offline, fully-cached, platform agnostic, html5-based web app built for the collection of patient data local and remote areas (namely the bateys of La Romana, Dominican Republic).
+An offline, fully-cached, platform agnostic, html5-based web app built for the collection of patient data from local and remote areas (namely the bateys of La Romana, Dominican Republic).
 
-## How will if work:
+## How will it work:
 
 This will be a web app, built using javascipt, and saved locally via a application cache [manifest](https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache).
 
-It will work right-away on iOS and Andoud devices (phones and tablets), and should be able to work on windows phone, firefoxOS, and other smart phone OSes in the future.
+It will work right-away on iOS and Android devices (phones and tablets), from the home screen, and should be able to work on windows phone, firefoxOS, and other smart phone OSes in the future.
 
 Forms, pages, and data will all be stored on the device via a device-specific form of local storage (either localstorage, indexeddb, websql, etc.).
 
